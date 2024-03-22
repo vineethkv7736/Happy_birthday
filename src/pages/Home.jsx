@@ -29,7 +29,7 @@ const Home = () => {
         key={index}
         initial={{ scale: 0 }}
         animate={{ scale: [0, 2, 1] }}
-        transition={{ duration: 0.5, delay: 5 + index * 0.3 }}
+        transition={{ duration: 0.5, delay:  index * 0.3 }}
         className="text-sm font-serif opacity-50 mt-2 pl-1"
       >
         {letter}
@@ -42,14 +42,14 @@ const Home = () => {
         key={index}
         initial={{ scale: 0 }}
         animate={{ scale: [0, 2, 1] }}
-        transition={{ duration: 0.5, delay: 8 + index * 0.3 }}
+        transition={{ duration: 0.5, delay: 3 + index * 0.3 }}
         className="text-sm font-serif opacity-50 mt-2 pl-1"
       >
         {letter}
       </motion.span>
     );
   };
-  const text = "Forget the past; look forward to the future";
+  const text = "Forget the past, look forward to the future";
   const letters = text.split(" ");
   const text2 = "The best things are yet to come";
   const letters2 = text2.split(" ");
@@ -61,10 +61,10 @@ const Home = () => {
       {/* <BgParticles /> */}
       <div className="flex flex-col justify-center items-center min-h-screen w-full text-white">
         <motion.h1
-          className="text-5xl md:text-8xl font-serif mb-1"
+          className="text-4xl md:text-8xl font-serif mb-1"
           initial={{ opacity: 0, y: -50 }} // Initial opacity and y position
           animate={{ opacity: 1, y: 0 }} // Animation properties
-          transition={{ duration: 2, delay: 5 }} // Animation duration
+          transition={{ duration: 2 }} // Animation duration
         >
           Happy Birthday
         </motion.h1>
@@ -72,7 +72,7 @@ const Home = () => {
           className="text-2xl font-serif"
           initial={{ opacity: 0, x: -100 }} // Initial opacity and y position
           animate={{ opacity: 1, x: 0 }} // Animation properties
-          transition={{ duration: 2, delay: 5 }} // Animation duration
+          transition={{ duration: 2}} // Animation duration
         >
           @ 15
         </motion.h1>
@@ -80,7 +80,7 @@ const Home = () => {
           className="mb-6 text-xs"
           initial={{ opacity: 0, x: 100 }} // Initial opacity and y position
           animate={{ opacity: 1, x: 0 }} // Animation properties
-          transition={{ duration: 2, delay: 5 }} // Animation duration
+          transition={{ duration: 2 }} // Animation duration
         >
           I Hope You Enjoy Your Special Day To The Fullest
         </motion.h1>

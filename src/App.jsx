@@ -21,7 +21,7 @@ function App() {
   return( 
   <div className="">
     {!state && <Landing count={count} />}
-    <Home/>
+    {state && <Home/>}
     </div>
     );
 }
